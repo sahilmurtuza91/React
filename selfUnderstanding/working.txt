@@ -1,0 +1,5 @@
+npx create-react-app reactfilenmae  --> this is the way to install the react in terminal and perform different operation
+npm create nite@latest  --> this is the way to create install the react like React + Vite and perform different opereation
+
+// rafce  --> Gives the arro function with return thta is mainly used in the app.jx | app.jsx
+// rfce --> gives the  function with return thta is mainly used in the app.jx | app.jsx
