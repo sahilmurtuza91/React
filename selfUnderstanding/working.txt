@@ -3,3 +3,5 @@ npm create nite@latest  --> this is the way to create install the react like Rea
 
 // rafce  --> Gives the arro function with return thta is mainly used in the app.jx | app.jsx
 // rfce --> gives the  function with return thta is mainly used in the app.jx | app.jsx
+
+// We are creating the custom class to undertand that hi=ow the rectElement is injected to the html container
