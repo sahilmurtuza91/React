@@ -12,7 +12,7 @@ function MyApp(){
 
 
 /*
-// this will cause an error reactElement is not a valid element beacause it is not im jsx formate beacuse it is diffent synatax beacause it is made my use and we use different synatx of react element
+// this will cause an error reactElement is not a valid element beacause it is not in jsx formate beacuse it is diffent synatax beacause it is made my use and we use different synatx of react element
 // so to make it working we have to create a  custom reander funcrion that will convert this objecct into jsx format
 const reactElement={
     type:"a",
