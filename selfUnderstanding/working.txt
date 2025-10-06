@@ -1,7 +1,32 @@
 npx create-react-app reactfilenmae  --> this is the way to install the react in terminal and perform different operation
-npm create nite@latest  --> this is the way to create install the react like React + Vite and perform different opereation
+npm create vite@latest  --> this is the way to create install the react like React + Vite and perform different opereation
 
-// rafce  --> Gives the arro function with return thta is mainly used in the app.jx | app.jsx
-// rfce --> gives the  function with return thta is mainly used in the app.jx | app.jsx
+// rafce  --> Gives the arro function with return that is mainly used in the app.jx | app.jsx
+// rfce --> gives the  function with return that is mainly used in the app.jx | app.jsx
 
-// We are creating the custom class to undertand that hi=ow the rectElement is injected to the html container
+// We are creating the custom class to undertand that hi=ow the rectElement is injected to the html containe
+
+
+HOOKS
+Hooks are needed in React to use state and lifecycle features inside functional components, making the code more reusable, cleaner, and easier to manage.
+
+--> Problems Before Hooks and How Hooks Solved Them (Normal Text Format)
+
+1. Functional components couldn’t use state or lifecycle methods.
+→ Hooks like useState and useEffect allow functional components to manage state and handle side effects.
+
+2. Class components were harder to read and maintain.
+→ Hooks make the code much cleaner and easier by allowing us to write everything using functions instead of classes.
+
+3. Sharing logic between components was difficult (using HOCs or render props became messy).
+→ Hooks enable easy logic reuse through custom hooks, making code more organized.
+
+4. Complex components became hard to manage because lifecycle logic (like componentDidMount, componentDidUpdate, etc.) was spread across multiple methods.
+→ useEffect combines all related side effects in one place with clear dependencies.
+
+5. There was confusion with the ‘this’ keyword in class components.
+→ Hooks completely remove the need for this, making the code simpler and error-free.
+
+##  In tailwind img tag is self closing tag so we have to make it closing by adding / before 
+
+this links helps us to get the image from the internet https://www.pexels.com/
