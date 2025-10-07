@@ -27,6 +27,44 @@ Hooks are needed in React to use state and lifecycle features inside functional 
 5. There was confusion with the ‘this’ keyword in class components.
 → Hooks completely remove the need for this, making the code simpler and error-free.
 
+---------------understand how useState works-------------------------
+In React:
+let [counter, setCounter] = useState(15);
+counter holds the current value of state (say 15).
+setCounter() schedules a state update — it does not immediately change the value of counter.
+React may batch multiple setState calls for performance reasons.
+That means — multiple setCounter() calls in one event handler are combined before React re-renders.
+
+🔍 Case 1 — setCounter(counter + 1)
+Let’s see what happens step by step if counter = 15 initially:
+setCounter(counter + 1);
+setCounter(counter + 1);
+setCounter(counter + 1);
+What React sees internally
+In the first call, you pass setCounter(16)
+In the second call, you also pass setCounter(16) (because counter is still 15 — React hasn’t updated it yet)
+In the third call, again setCounter(16)
+➡️ React batches all updates and finally applies the last one → counter becomes 16 only.
+
+❗ Because counter was read once at the beginning (15),
+all three updates used the same stale value (15).
+So, even though you wrote it three times, React thinks:
+“Oh, you want to set counter to 16 again and again. Fine, I’ll just make it 16.”
+
+🔁 Case 2 — setCounter(prevCounter => prevCounter + 1)
+Now when you do this:
+setCounter(prevCounter => prevCounter + 1);
+setCounter(prevCounter => prevCounter + 1);
+setCounter(prevCounter => prevCounter + 1);
+React sees functions, not fixed values.
+Each time React runs these functions during batching, it uses the latest updated value of prevCounter.
+Internally it’s like:
+First call → prevCounter = 15 → new value = 16
+Second call → prevCounter = 16 → new value = 17
+Third call → prevCounter = 17 → new value = 18
+✅ So final value = 18 (increased by 3)
+
+------------------------------------------------------------------------------------
 
 
 this links helps us to get the image from the internet https://www.pexels.com/
