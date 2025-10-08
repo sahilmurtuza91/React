@@ -1,0 +1,61 @@
+--------Object--------------
+* object is the collect of key value pairs.
+* Each key (called a property name) is a string or symbol, and its value can be any data type — number, string, function, array, or even another object.
+
+-----------------Ways to Create an Object------------------
+✅ (a) Object Literal--->
+const car = { brand: "Tesla", model: "Model 3", color: "Red" };
+
+✅ (b) Using new Object()---->
+const car = new Object();
+car.brand = "Tesla";
+car.model = "Model 3";
+car.color = "Red";
+
+✅ (c) Using Constructor Function----->
+function Car(brand, model, color) {
+  this.brand = brand;
+  this.model = model;
+  this.color = color;
+}
+const car1 = new Car("Tesla", "Model 3", "Red");
+
+✅ (d) Using ES6 class----->
+class Car {
+  constructor(brand, model, color) {
+    this.brand = brand;
+    this.model = model;
+    this.color = color;
+  }
+}
+const car1 = new Car("Tesla", "Model 3", "Red");
+
+
+
+-----------------------------
+
+🧭 6. Methods (Functions Inside Objects)
+
+You can store a function as a property inside an object — this is called a method.
+
+const person = {
+  name: "Sahil",
+  greet: function() {
+    console.log("Hello " + this.name);
+  }
+};
+person.greet(); // Hello Sahil
+
+🧮 7. Nested Objects
+
+Objects can contain other objects:
+
+const student = {
+  name: "Sahil",
+  marks: {
+    math: 90,
+    science: 85
+  }
+};
+
+console.log(student.marks.math); // 90
